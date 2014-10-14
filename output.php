@@ -170,6 +170,187 @@ $outputValue; #the converted value in the output units
 		$inputUnits = 'Kelvin';
 		$outputUnits = 'Degrees Celcius';
 	}
+#LENGTH
+	if ($conversion == 'm-cm')
+	{
+		$outputValue = $inputValue * 100;
+		$inputUnits = "Meters";
+		$outputUnits = "Centimeters";
+	}
+	if ($conversion == 'm-mm')
+	{
+		$outputValue = $inputValue * 1000;
+		$inputUnits = "Meters";
+		$outputUnits = "Millimeters";
+	}
+	if ($conversion == 'm-um')
+	{
+		$outputValue = $inputValue * 100000;
+		$inputUnits = "Meters";
+		$outputUnits = "Micrometers";
+	}
+	if ($conversion == 'm-in')
+	{
+		$outputValue = $inputValue * 39.3700787;
+		$inputUnits = "Meters";
+		$outputUnits = "Inches";
+	}
+	if ($conversion == 'm-ft')
+	{
+		$outputValue = $inputValue * 3.280839;
+		$inputUnits = "Meters";
+		$outputUnits = "Feet";
+	}
+	if ($conversion == 'cm-m')
+	{
+		$outputValue = $inputValue / 100.0;
+		$inputUnits = "Centimeters";
+		$outputUnits = "Meters";
+	}
+	if ($conversion == 'cm-mm')
+	{
+		$outputValue = $inputValue * 10.0;
+		$inputUnits = "Centimeters";
+		$outputUnits = "Millimeters";
+	}
+	if ($conversion == 'cm-um')
+	{
+		$outputValue = $inputValue * 10000.0;
+		$inputUnits = "Centimeters";
+		$outputUnits = "Micrometers";
+	}
+	if ($conversion == 'cm-in')
+	{
+		$outputValue = $inputValue * 0.3937;
+		$inputUnits = "Centimeters";
+		$outputUnits = "Inches";
+	}
+	if ($conversion == 'cm-ft')
+	{
+		$outputValue = $inputValue * 0.032808;
+		$inputUnits = "Centimeters";
+		$outputUnits = "Feet";
+	}
+	if ($conversion == 'mm-m')
+	{
+		$outputValue = $inputValue / 1000.0;
+		$inputUnits = "Millimeters";
+		$outputUnits = "Meters";
+	}
+	if ($conversion == 'mm-cm')
+	{
+		$outputValue = $inputValue / 10.0;
+		$inputUnits = "Millimeters";
+		$outputUnits = "Centimeters";
+	}
+	if ($conversion == 'mm-um')
+	{
+		$outputValue = $inputValue * 1000.0;
+		$inputUnits = "Millimeters";
+		$outputUnits = "Micrometers";
+	}
+	if ($conversion == 'mm-in')
+	{
+		$outputValue = $inputValue * 0.03937;
+		$inputUnits = "Millimeters";
+		$outputUnits = "Inches";
+	}
+	if ($conversion == 'mm-ft')
+	{
+		$outputValue = $inputValue * 0.0032808;
+		$inputUnits = "Millimeters";
+		$outputUnits = "Feet";
+	}
+	if ($conversion == 'um-m')
+	{
+		$outputValue = $inputValue / 1000000.0;
+		$inputUnits = "Micrometers";
+		$outputUnits = "Meters";
+	}
+	if ($conversion == 'um-cm')
+	{
+		$outputValue = $inputValue / 10000.0;
+		$inputUnits = "Micrometers";
+		$outputUnits = "Centimeters";
+	}
+	if ($conversion == 'um-mm')
+	{
+		$outputValue = $inputValue / 1000.0;
+		$inputUnits = "Micrometers";
+		$outputUnits = "Millimeters";
+	}
+	if ($conversion == 'um-in')
+	{
+		$outputValue = $inputValue * 0.00003937;
+		$inputUnits = "Micrometers";
+		$outputUnits = "Inches";
+	}
+	if ($conversion == 'um-ft')
+	{
+		$outputValue = $inputValue * 0.0000032808;
+		$inputUnits = "Micrometers";
+		$outputUnits = "Feet";
+	}
+	if ($conversion == 'in-m')
+	{
+		$outputValue = $inputValue * 0.0254;
+		$inputUnits = "Inches";
+		$outputUnits = "Meters";
+	}
+	if ($conversion == 'in-cm')
+	{
+		$outputValue = $inputValue * 2.54;
+		$inputUnits = "Inches";
+		$outputUnits = "Centimeters";
+	}
+	if ($conversion == 'in-mm')
+	{
+		$outputValue = $inputValue * 25.4;
+		$inputUnits = "Inches";
+		$outputUnits = "Millimeters";
+	}
+	if ($conversion == 'in-um')
+	{
+		$outputValue = $inputValue * 25400.0;
+		$inputUnits = "Inches";
+		$outputUnits = "Micrometers";
+	}
+	if ($conversion == 'in-ft')
+	{
+		$outputValue = $inputValue / 12.0;
+		$inputUnits = "Inches";
+		$outputUnits = "Feet";
+	}
+	if ($conversion == 'ft-m')
+	{
+		$outputValue = $inputValue * 0.3048;
+		$inputUnits = "Feet";
+		$outputUnits = "Meters";
+	}
+	if ($conversion == 'ft-cm')
+	{
+		$outputValue = $inputValue * 30.48;
+		$inputUnits = "Feet";
+		$outputUnits = "Centimeters";
+	}
+	if ($conversion == 'ft-mm')
+	{
+		$outputValue = $inputValue * 304.8;
+		$inputUnits = "Feet";
+		$outputUnits = "Millimeters";
+	}
+	if ($conversion == 'ft-um')
+	{
+		$outputValue = $inputValue * 304800.0;
+		$inputUnits = "Feet";
+		$outputUnits = "Micrometers";
+	}
+	if ($conversion == 'ft-in')
+	{
+		$outputValue = $inputValue * 12.0;
+		$inputUnits = "Feet";
+		$outputUnits = "Inches";
+	}
 	if ($conversion == null)
 	{
 		echo "Error, null value";
