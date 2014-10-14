@@ -1,4 +1,3 @@
-Written by Kevin See
 <HTML>
 <title>Unit Converter Output</title>
 </HTML>
@@ -13,6 +12,7 @@ $outputValue; #the converted value in the output units
 
 
 #conversions
+#MASS
 	if ($conversion == 'g-kg')
 	{
 		$outputValue = $inputValue / 1000.0;
@@ -132,6 +132,43 @@ $outputValue; #the converted value in the output units
 		$outputValue = $inputValue * 0.625;
 		$inputUnits = 'Ounces';
 		$outputUnits = 'Pounds';
+	}
+#TEMPERATURE
+	if ($conversion == 'F-C')
+	{
+		$outputValue = ($inputValue - 32.0) * (5.0/9.0);
+		$inputUnits = 'Degrees Fahrenheit';
+		$outputUnits = 'Degrees Celcius';
+	}
+	if ($conversion == 'F-K')
+	{
+		$outputValue = ($inputValue - (32.0 + 273.15) * (5.0/9.0));
+		$inputUnits = 'Degrees Fahrenheit';
+		$outputUnits = 'Kelvin';
+	}
+	if ($conversion == 'C-F')
+	{
+		$outputValue = ($inputValue * (9.0/5.0)) + 32.0;
+		$inputUnits = 'Degrees Celcius';
+		$outputUnits = 'Degrees Fahrenheit';
+	}
+	if ($conversion == 'C-K')
+	{
+		$outputValue = $inputValue + 273.15;
+		$inputUnits = 'Degrees Celcius';
+		$outputUnits = 'Kelvin';
+	}
+	if ($conversion == 'K-F')
+	{
+		$outputValue = (((9.0/5.0) * $inputValue ) + 32.0 ) - 273.15;
+		$inputUnits = 'Kelvin';
+		$outputUnits = 'Degrees Fahrenheit';
+	}
+	if ($conversion == 'K-C')
+	{
+		$outputValue = $inputValue - 273.15;
+		$inputUnits = 'Kelvin';
+		$outputUnits = 'Degrees Celcius';
 	}
 	if ($conversion == null)
 	{

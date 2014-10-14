@@ -1,9 +1,8 @@
-#Written by Kevin See
 <HTML>
 <HEAD>
 <title>Unit Converter</title>
-<link rel="icon" type="image/png" href="convert.png"> #CHANGE TO MY PNG FILE
-<link rel="StyleSheet" media="screen" href="convert.css"> #CHANGE TO MY CSS FILE
+<link rel="icon" type="image/png" href="convert.png"> 
+<link rel="StyleSheet" media="screen" href="convert.css"> 
 </HEAD>
 <BODY>
 <h1>Convert Units</h1>
@@ -11,8 +10,9 @@
 Type of conversion<br>
 <select name="conversion">
 <option value="null" selected="selected">Select Type</option>
-<!-- Length -->
+<!-- Mass -->
 <option value="null"></option>
+<option value="null">MASS CONVERSIONS</option>
 <option value="g-kg">Grams to Kilograms</option>
 <option value="g-mg">Grams to Milligrams</option>
 <option value="g-lb">Grams to Pounds</option>
@@ -33,6 +33,13 @@ Type of conversion<br>
 <option value="oz-kg">Ounces to Kilograms</option>
 <option value="oz-mg">Ounces to Milligrams</option>
 <option value="oz-lb">Ounces to Pounds</option>
+<option value="null">TEMPERATURE CONVERSIONS</option>
+<option value="F-C">Fahrenheit to Celcius</option>
+<option value="F-K">Fahrenheit to Kelvin</option>
+<option value="C-F">Celcius to Fahrenheit</option>
+<option value="C-K">Celcius to Kelvin</option>
+<option value="K-F">Kelvin to Fahrenheit</option>
+<option value="K-C">Kelvin to Celcius</option>
 </select>
 <br><br>
 Value to Convert<br>
@@ -41,9 +48,8 @@ Value to Convert<br>
 <input type="submit" value="Convert">
 </form>
 <p id="footer">
-This is a footer<br>
 Developed for use in Moodle<br>
-github.com/KevinSee94<br>
+Source code available at: https://github.com/KevinSee94<br>
 </p>
 </BODY>
 </HTML>
