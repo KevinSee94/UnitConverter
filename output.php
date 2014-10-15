@@ -351,6 +351,43 @@ $outputValue; #the converted value in the output units
 		$inputUnits = "Feet";
 		$outputUnits = "Inches";
 	}
+#ENERGY CONVERSIONS
+	if ($conversion == 'J-BTU')
+	{
+		$outputBalue = $inputValue * 0.0009484513;
+		$inputUnits = "Joules";
+		$outputUnits = "BTU";
+	}
+	if ($conversion == 'J-Cal')
+	{
+		$outputBalue = $inputValue * 0.29300593614;
+		$inputUnits = "Joules";
+		$outputUnits = "Calories";
+	}
+	if ($conversion == 'BTU-J')
+	{
+		$outputBalue = $inputValue * 1055.0559;
+		$inputUnits = "BTU";
+		$outputUnits = "Joules";
+	}
+	if ($conversion == 'BTU-Cal')
+	{
+		$outputBalue = $inputValue * 252.1644;
+		$inputUnits = "BTU";
+		$outputUnits = "Calories";
+	}
+	if ($conversion == 'Cal-J')
+	{
+		$outputBalue = $inputValue * 4.184;
+		$inputUnits = "Calories";
+		$outputUnits = "Joules";
+	}
+	if ($conversion == 'Cal-BTU')
+	{
+		$outputBalue = $inputValue * 0.003965666;
+		$inputUnits = "Calories";
+		$outputUnits = "BTU";
+	}
 	if ($conversion == null)
 	{
 		echo "Error, null value";
