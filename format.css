@@ -1,7 +1,7 @@
-body {background-color:;text-align:center;}
-h1 {font-family:;font-variant:;}
-p {font-family:;}
-form {border-style:;border-color:;background-color:;margin-left:42%;margin-right:42%;}
-input {text-align:left;border-style:;border-color:;}
-select {border-style:;border-color:;}
-#footer {margin-top:;font-family:;font-size:;color:;text-align:center;}
+body {background-color:;text-align:center;font-family: Century Gothic, sans-serif;}
+h1 {font-family: Century Gothic, sans-serif;font-variant:;}
+p {font-family: Centruy Gothic, sans-serif;}
+form {border-style:;border-color:red;background-color:;margin-left:42%;margin-right:42%;}
+input {text-align: center;border-style:;border-color:black;}
+select {border-style:;border-color:black;width:175;}
+#footer {margin-top:;font-family:Centruy Gothic, sans-serif;font-size:12;color:black;text-align:center;}
