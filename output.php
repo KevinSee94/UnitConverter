@@ -354,39 +354,76 @@ $outputValue; #the converted value in the output units
 #ENERGY CONVERSIONS
 	if ($conversion == 'J-BTU')
 	{
-		$outputBalue = $inputValue * 0.0009484513;
+		$outputValue = $inputValue * 0.0009484513;
 		$inputUnits = "Joules";
 		$outputUnits = "BTU";
 	}
 	if ($conversion == 'J-Cal')
 	{
-		$outputBalue = $inputValue * 0.29300593614;
+		$outputValue = $inputValue * 0.29300593614;
 		$inputUnits = "Joules";
 		$outputUnits = "Calories";
 	}
 	if ($conversion == 'BTU-J')
 	{
-		$outputBalue = $inputValue * 1055.0559;
+		$outputValue = $inputValue * 1055.0559;
 		$inputUnits = "BTU";
 		$outputUnits = "Joules";
 	}
 	if ($conversion == 'BTU-Cal')
 	{
-		$outputBalue = $inputValue * 252.1644;
+		$outputValue = $inputValue * 252.1644;
 		$inputUnits = "BTU";
 		$outputUnits = "Calories";
 	}
 	if ($conversion == 'Cal-J')
 	{
-		$outputBalue = $inputValue * 4.184;
+		$outputValue = $inputValue * 4.184;
 		$inputUnits = "Calories";
 		$outputUnits = "Joules";
 	}
 	if ($conversion == 'Cal-BTU')
 	{
-		$outputBalue = $inputValue * 0.003965666;
+		$outputValue = $inputValue * 0.003965666;
 		$inputUnits = "Calories";
 		$outputUnits = "BTU";
+	}
+#Volume Conversions
+	if ($conversion == 'L-mL')
+	{
+		$outputValue = $inputValue * 1000.0;
+		$inputUnits = 'Liters';
+		$outputUnits = 'Milliliters';
+	}
+	if ($conversion == 'mL-L')
+	{
+		$outputValue = $inputValue / 1000.0;
+		$inputUnits = 'Milliliters';
+		$outputUnits = 'Liters';
+	}
+	if ($conversion == 'gal-L')
+	{
+		$outputValue = $inputValue * 3.7854;
+		$inputUnits = 'Gallons';
+		$outputUnits = 'Liters';
+	}
+	if ($conversion == 'L-gal')
+	{
+		$outputValue = $inputValue / 3.7854;
+		$inputUnits = 'Liters';
+		$outputUnits = 'Gallons';
+	}
+	if ($conversion == 'gal-mL')
+	{
+		$outputValue = $inputValue * 3785.411;
+		$inputUnits = 'Gallons';
+		$outputUnits = 'Milliliters';
+	}
+	if ($conversion == 'mL-gal')
+	{
+		$outputValue = $inputValue / 3785.411;
+		$inputUnits = 'Milliliters';
+		$outputUnits = 'Gallons';
 	}
 	if ($conversion == null)
 	{
