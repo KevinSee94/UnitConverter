@@ -1,1 +1,1 @@
-This is a repository for my Moodle plugins
+This is code for a unit converter using HTML, CSS, and JavaScript.  Information from the HTML form gets processed by the script and outputted to the user.  This was started as a Moodle block that I was making for a professor, but I only finished it in this form as an exercise in basic web app programming.
