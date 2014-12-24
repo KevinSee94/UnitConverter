@@ -74,12 +74,35 @@ constants["mL-gal"] = ( 1.0 / 3785.411 );
 constants["gal-L"] = 3.7854;
 constants["gal-mL"] = 3785.411;
 
+
+//Function generates the text of the slected conversion for output
+//All of the possible selections in the select box contain both the input and output units.  We only want the output units to show up in the 
+//output of the converter, so the processing of the function removes the first unit and the hyphen.
+function getOutputUnit(){
+	//Reference the form
+	var theForm = document.forms["conversion"];
+	//Reference the select box
+	var conv = theForm.elements["conversionType"];
+	//Get the value of the selection in the select box as a variable.  
+	var unit = conv.value;
+	//Set min and max of eventual substring funcion call
+	var max = unit.length;
+	var min = unit.length;
+	//Loop decreases the min variable until it hits the hyphen
+	while( unit.substring( min, min + 1 ) != "-" ){
+		min = min - 1;
+	}
+	//Generate and return output.
+	var output = unit.substring( ( min + 1 ), max );
+	return output;
+}
+
 //Function to get the conversion selected by the user
 function getConversionType(){
 	var convConstant = 0
 	//Reference the form
 	var theForm = document.forms["conversion"];
-	//Reference the drop down menu
+	//Reference the select box
 	var convType = theForm.elements["conversionType"];
 	//Set equal to the constants in the array
 	convConstant = constants[convType.value];
@@ -121,7 +144,7 @@ function calculateTotal(){
 	//display result
 	var divobj = document.getElementById('output');
 	divobj.style.display = 'block';
-	divobj.innerHTML = convOutput;
+	divobj.innerHTML = convOutput + "  " + getOutputUnit();
 }
 //This function hides the text displaying the total on the initial load of the page
 function hideTotal(){
